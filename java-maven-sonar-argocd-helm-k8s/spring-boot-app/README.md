@@ -67,10 +67,11 @@ Hurray !! Now you can access the `SonarQube Server` on `http://<ip-address>:9000
 ## Download minikube binary
 
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+--
 Install the binary
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 ##Check minikube is installed or not
-
+--
 minikube version    
 minikube start
