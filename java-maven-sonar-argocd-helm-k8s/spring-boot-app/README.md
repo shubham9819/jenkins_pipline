@@ -75,3 +75,17 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 --
 minikube version    
 minikube start
+
+##Argo-CD Install on Kubernetes
+
+Install Operator Lifecycle Manager (OLM), a tool to help manage the Operators running on your cluster.
+--
+$ curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.24.0/install.sh | bash -s v0.24.0
+
+Install the operator by running the following command
+--
+$ kubectl create -f https://operatorhub.io/install/argocd-operator.yaml
+
+After install, watch your operator come up using next command.
+--
+$ kubectl get csv -n operators
